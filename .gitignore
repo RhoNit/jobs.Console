@@ -1,12 +1,8 @@
 __pycache__
-tests/
-ranit-env-1/
 .env
 env
 sql_app.db
-<<<<<<< HEAD
 test_db.db
-=======
 backend/tests/
 backend/ranit-env-1/
->>>>>>> 3f09a3cb2a4945a9f344f5d7b12501ce6f18379d
+
