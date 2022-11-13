@@ -5,4 +5,4 @@ sql_app.db
 test_db.db
 backend/tests/
 backend/ranit-env-1/
-
+.pre-commit-config.yaml
