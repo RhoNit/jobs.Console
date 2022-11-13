@@ -1,4 +1,4 @@
-# Jobs.Console: job API
+# Jobs.Console: a job API
 A job posting console built in FastAPI
 
 
