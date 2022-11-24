@@ -1,16 +1,15 @@
 from db.base_class import Base
-from sqlalchemy import Boolean
-from sqlalchemy import Column
-from sqlalchemy import Integer
-from sqlalchemy import String
-from sqlalchemy.orm import relationship
+
+import sqlalchemy as _sql
+import sqlalchemy.orm as _orm
 
 
 class User(Base):
-    id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, unique=True, nullable=False)
-    email = Column(String, nullable=False, unique=True, index=True)
-    hashed_password = Column(String, nullable=False)
-    is_active = Column(Boolean(), default=True)
-    is_superuser = Column(Boolean(), default=False)
-    jobs = relationship("Job", back_populates="owner")
+    id = _sql.Column(_sql.Integer, primary_key=True, index=True)
+    username = _sql.Column(_sql.String, unique=True, nullable=False)
+    email = _sql.Column(_sql.String, nullable=False, unique=True, index=True)
+    hashed_password = _sql.Column(_sql.String, nullable=False)
+    is_active = _sql.Column(_sql.Boolean, default=True)
+    is_superuser = _sql.Column(_sql.Boolean, default=False)
+    
+    jobs = _orm.relationship("Job", back_populates="owner")
