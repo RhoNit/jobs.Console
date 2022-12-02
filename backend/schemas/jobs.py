@@ -1,11 +1,9 @@
-from datetime import date
-from datetime import datetime
+from datetime import date, datetime
 from typing import Optional
 
 from pydantic import BaseModel
 
 
-# shared properties
 class JobBase(BaseModel):
     title: Optional[str] = None
     company: Optional[str] = None
@@ -22,8 +20,7 @@ class JobCreate(JobBase):
     location: str
     description: str
 
-
-# this will be used to format the response to not to have id,owner_id etc
+        
 class ShowJob(JobBase):
     title: str
     company: str
@@ -32,5 +29,5 @@ class ShowJob(JobBase):
     date_posted: date
     description: Optional[str]
 
-    class Config:  # to convert non dict obj to json
+    class Config:
         orm_mode = True
