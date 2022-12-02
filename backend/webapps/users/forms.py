@@ -1,5 +1,4 @@
-from typing import List
-from typing import Optional
+from typing import Optional, List
 
 from fastapi import Request
 
@@ -27,4 +26,5 @@ class UserCreateForm:
             self.errors.append("Password must be > 4 chars")
         if not self.errors:
             return True
+            
         return False

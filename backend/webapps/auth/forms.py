@@ -1,5 +1,4 @@
-from typing import List
-from typing import Optional
+from typing import Optional, List
 
 from fastapi import Request
 
@@ -13,9 +12,7 @@ class LoginForm:
 
     async def load_data(self):
         form = await self.request.form()
-        self.username = form.get(
-            "email"
-        )  # since outh works on username field we are considering email as username
+        self.username = form.get("email")           # since OAuth works on username field we are considering email as username
         self.password = form.get("password")
 
     async def is_valid(self):
@@ -25,4 +22,5 @@ class LoginForm:
             self.errors.append("A valid password is required")
         if not self.errors:
             return True
+            
         return False

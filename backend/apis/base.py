@@ -1,6 +1,5 @@
-from apis.version1 import route_jobs
-from apis.version1 import route_login
-from apis.version1 import route_users
+from apis.v1 import route_users, route_login, route_jobs
+
 from fastapi import APIRouter
 
 

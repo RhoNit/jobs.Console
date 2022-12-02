@@ -1,12 +1,15 @@
 from apis.base import api_router
-from core.config import settings
+
+from configurator.config import settings
+
 from db.base import Base
 from db.session import engine
-from db.utils import check_db_connected
-from db.utils import check_db_disconnected
+from db.utils import check_db_connected, check_db_disconnected
+
+from webapps.base import api_router as web_app_router
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from webapps.base import api_router as web_app_router
 
 
 def include_router(app):
@@ -23,7 +26,10 @@ def create_tables():
 
 
 def start_application():
-    app = FastAPI(title=settings.PROJECT_NAME, version=settings.PROJECT_VERSION)
+    app = FastAPI(
+        title=settings.PROJECT_NAME, 
+        version=settings.PROJECT_VERSION
+    )
     include_router(app)
     configure_static(app)
     create_tables()

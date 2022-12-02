@@ -1,6 +1,6 @@
 from typing import Generator
 
-from core.config import settings
+from configurator.config import settings
 
 import sqlalchemy as _sql
 import sqlalchemy.orm as _orm
@@ -13,6 +13,7 @@ if settings.USE_SQLITE_DB == "True":
 		SQLALCHEMY_DATABASE_URL, 
 		connect_args={"check_same_thread": False}
 	)
+	
 # for other production DBs
 else:
 	SQLALCHEMY_DATABASE_URL = settings.DATABASE_URL
