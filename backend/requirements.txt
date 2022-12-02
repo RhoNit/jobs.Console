@@ -1,44 +1,44 @@
 fastapi
 uvicorn
 
-#for template
+# for template
 jinja2
 
-#for static files
+# for static files
 aiofiles
 
-#for database
+# for database
 sqlalchemy
 psycopg2
 
-#for loading environment variables
+# for loading environment variables
 python-dotenv
 
-#for email validation
+# for email validation
 pydantic[email]
 
-#hashing
+# hashing
 passlib[bcrypt]
 
 
-#for testing
+# for testing
 pytest
 requests
 
-#for creating jwt tokens
+# for creating jwt tokens
 python-jose
 
-#for  cleaning up codebase on each commit
+# for cleaning up codebase on each commit
 pre-commit
 
-#for accessing form data
+# for accessing form data
 python-multipart
 
-#Databases gives asyncio support for a range of databases.
+# Databases gives asyncio support for a range of databases.
 databases
 databases[sqlite]
 asyncpg
 aiosqlite
 
-#seedir to print tree structure of folders
+# seedir to print tree structure of folders
 seedir
