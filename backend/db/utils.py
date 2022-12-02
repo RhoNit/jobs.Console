@@ -11,7 +11,7 @@ async def check_db_connected():
                 await database.execute("SELECT 1")
         print("Database is connected (^_^) : UP")
     except Exception as e:
-        print("Oopsie!!!")
+        print("Oopsie...")
         print("seems like DB is missing or there is some problem in DB connection,see below traceback")
         raise e
 
