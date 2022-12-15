@@ -5,7 +5,9 @@
 <p align="center"> A job posting console built in FastAPI </p>
 
 
+## 🛰 ER Diagram
 
+![](./erd_jobs_console.png "ER Diagram")
 
 ## 🚀 Tech Stack:
 * FastAPI (microframework)
