@@ -22,7 +22,7 @@ git clone "https://github.com/RhoNit/jobs.Console.git"
 
 <hr>
 
-### Navigate to the ```/backend``` sub-directory from pwd
+### Navigate to the ```/backend``` sub-directory of the repo
 ```
 cd backend
 ```
