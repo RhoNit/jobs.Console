@@ -1,12 +1,16 @@
-# Jobs.Console: a job API
-A job posting console built in FastAPI
+<h1 align="center">
+  Jobs.Console: a job API
+</h1>
+
+<p align="center"> A job posting console built in FastAPI </p>
 
 
-## Technology Stack:
-* FastAPI
-* Uvicorn (server)
-* SQLAlchemy
-* sqlite
+
+
+## 🚀 Tech Stack:
+* FastAPI (microframework)
+* SQLAlchemy (ORM)
+* sqlite (DB)
 
 
 ## 🛠 Installation
@@ -18,12 +22,26 @@ git clone "https://github.com/RhoNit/jobs.Console.git"
 
 <hr>
 
-### Navigate to the ```/backend``` sub-directory
+### Navigate to the ```/backend``` sub-directory from pwd
 ```
-cd jobs.Console/
-python -m venv new-env         #create a virtual environment
-.\new-env\Scripts\activate     #activate your virtual environment (for Windows)
-cd backend/
+cd backend
+```
+
+<hr>
+
+### Create a virtual environment
+```
+python -m venv new-env
+```
+
+<hr>
+
+### Actiavte the virtual environment
+```
+.\new-env\Scripts\activate     # for Windows
+
+source new-env/bin/activate    # for Linux distros and macOS
+```
 
 <hr>
 
@@ -45,6 +63,7 @@ uvicorn main:app --reload
 ```
 http://127.0.0.1:8000
 ```
+
 <hr>
 
 ### API Documentation and test APIs on
