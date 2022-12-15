@@ -1,5 +1,5 @@
 <h1 align="center">
-  Jobs.Console: a job API
+  Jobs.Console: a job API 👽
 </h1>
 
 <p align="center"> A job posting console built in FastAPI </p>
@@ -36,7 +36,7 @@ python -m venv new-env
 
 <hr>
 
-### Actiavte the virtual environment
+### Activate the virtual environment
 ```
 .\new-env\Scripts\activate     # for Windows
 
