@@ -4,6 +4,7 @@
 
 <p align="center"> A job posting console built in FastAPI </p>
 
+<br>
 
 ## 🛰 ER Diagram
 
